@@ -1,0 +1,11 @@
+{
+  "english_file": "europarl-v7.fr-en.en",
+  "french_file": "europarl-v7.fr-en.fr",
+  "output_dir": "outputs/tasks1_2",
+  "processed_dir": "data/processed",
+  "random_seed": 42,
+  "sample_ratio": 0.1,
+  "train_ratio": 0.7,
+  "valid_ratio": 0.1,
+  "test_ratio": 0.2
+}

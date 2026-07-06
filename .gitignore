@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+.matplotlib_cache/
+
+outputs/
+data/
+
+*.zip
+*.pt
+*.pth
+
+europarl-v7.fr-en.en
+europarl-v7.fr-en.fr

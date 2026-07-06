@@ -1,0 +1,87 @@
+{
+  "processed_dir": "data/processed",
+  "output_dir": "outputs/task3",
+  "random_seed": 42,
+  "device": "auto",
+  "max_train_pairs": 50000,
+  "max_valid_pairs": 3000,
+  "max_test_pairs": 3000,
+  "max_len_words": 25,
+  "max_len_chars": 120,
+  "min_freq": 2,
+  "max_vocab_size": 12000,
+  "batch_size": 24,
+  "epochs": 8,
+  "learning_rate": 0.001,
+  "embedding_dim": 128,
+  "hidden_dim": 256,
+  "bidirectional_encoder": true,
+  "dropout": 0.2,
+  "teacher_forcing": 0.5,
+  "teacher_forcing_start": 0.7,
+  "teacher_forcing_end": 0.35,
+  "label_smoothing": 0.05,
+  "early_stop_patience": 3,
+  "word2vec_epochs": 3,
+  "word2vec_window": 2,
+  "word2vec_sentences": 8000,
+  "word2vec_batch_size": 512,
+  "embedding_files": {
+    "en": "",
+    "fr": ""
+  },
+  "experiments": [
+    {
+      "name": "word_en_fr_random",
+      "source_lang": "en",
+      "target_lang": "fr",
+      "level": "word",
+      "embedding_type": "random"
+    },
+    {
+      "name": "word_en_fr_word2vec",
+      "source_lang": "en",
+      "target_lang": "fr",
+      "level": "word",
+      "embedding_type": "word2vec"
+    },
+    {
+      "name": "word_en_fr_hidden128",
+      "source_lang": "en",
+      "target_lang": "fr",
+      "level": "word",
+      "embedding_type": "random",
+      "hidden_dim": 128
+    },
+    {
+      "name": "word_en_fr_lr0005",
+      "source_lang": "en",
+      "target_lang": "fr",
+      "level": "word",
+      "embedding_type": "random",
+      "learning_rate": 0.0005
+    },
+    {
+      "name": "word_en_fr_pretrained_optional",
+      "source_lang": "en",
+      "target_lang": "fr",
+      "level": "word",
+      "embedding_type": "pretrained",
+      "run": false
+    },
+    {
+      "name": "word_fr_en_random",
+      "source_lang": "fr",
+      "target_lang": "en",
+      "level": "word",
+      "embedding_type": "random"
+    },
+    {
+      "name": "char_en_fr_random",
+      "source_lang": "en",
+      "target_lang": "fr",
+      "level": "char",
+      "embedding_type": "random"
+    }
+  ]
+}
